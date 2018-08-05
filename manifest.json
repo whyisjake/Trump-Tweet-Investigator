@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Trump is a liar.",
-  "version": "0.1.0",
-  "description": "Show the lies that Trump shares.",
+  "name": "Trump Tweet Investigator",
+  "version": "0.5.0",
+  "description": "Handy Chrome extension to investigate the claims of Trump's Tweets",
 
   "content_scripts": [{
     "css": ["styles.css"],
