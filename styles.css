@@ -1,0 +1,38 @@
+/* body {
+  background: url('https://media.giphy.com/media/3o7WTDJQVuYwhhuLhC/giphy.gif') !important;
+}
+
+#masthead,
+#primary {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background-color: #fff;
+  padding: 20px !important;
+}
+#masthead {
+  background: none;
+}
+#masthead img, #primary img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+} */
+
+
+/* .liar-stripes {
+  background-image: linear-gradient(45deg, #fdffe0 25%, #ffffff 25%, #ffffff 50%, #fdffe0 50%, #fdffe0 75%, #ffffff 75%, #ffffff 100%) !important;
+  background-size: 23.57px 23.57px !important;
+} */
+
+
+.liar-stripes {
+  background-image: linear-gradient(45deg, #ffd1d1 25%, #ffffff 25%, #ffffff 50%, #ffd1d1 50%, #ffd1d1 75%, #ffffff 75%, #ffffff 100%) !important;
+  background-size: 23.57px 23.57px !important;
+}
+
+a.ProfileTweet-actionButton:hover {
+  text-decoration: none;
+}
+
+.ProfileTweet-action--dm {
+  min-width: 40px !important;
+}

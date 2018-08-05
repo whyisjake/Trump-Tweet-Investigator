@@ -1,0 +1,23 @@
+{
+  "name": "trump-tweet-investigator",
+  "version": "0.5.0",
+  "description": "Handy Chrome extension to investigate the claims of Trump's Tweets",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whyisjake/trump-tweet-investigator.git"
+  },
+  "keywords": [
+    "Chrome",
+    "Trump"
+  ],
+  "author": "Jake Spurlock",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/whyisjake/trump-tweet-investigator/issues"
+  },
+  "homepage": "https://github.com/whyisjake/trump-tweet-investigator#readme"
+}
