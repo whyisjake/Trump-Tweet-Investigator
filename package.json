@@ -4,7 +4,8 @@
   "description": "Handy Chrome extension to investigate the claims of Trump's Tweets",
   "main": "content.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "crx pack -o trump.crx"
   },
   "repository": {
     "type": "git",
