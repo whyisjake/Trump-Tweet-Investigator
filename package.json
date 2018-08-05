@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/whyisjake/trump-tweet-investigator/issues"
   },
-  "homepage": "https://github.com/whyisjake/trump-tweet-investigator#readme"
+  "homepage": "https://github.com/whyisjake/trump-tweet-investigator#readme",
+  "devDependencies": {
+    "crx": "^3.2.1"
+  }
 }

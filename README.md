@@ -1,3 +1,3 @@
-# Create a Chrome extension to modify a website's HTML or CSS
+# Trump Tweet Investigator
 
-See post: https://blog.lateral.io/2016/04/create-chrome-extension-modify-websites-html-css/
+Adds a method for snoping on the president, and researching the daily lies.
