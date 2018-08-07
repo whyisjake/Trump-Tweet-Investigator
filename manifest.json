@@ -8,7 +8,7 @@
   "content_scripts": [{
     "css": ["styles.css"],
     "js": [
-      "jquery.min.js",
+      "node_modules/jquery/dist/jquery.min.js",
       "content.js"
     ],
     "matches": ["https://twitter.com/*"]

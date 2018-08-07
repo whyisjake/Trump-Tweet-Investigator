@@ -33,3 +33,32 @@ $('[data-screen-name~="realDonaldTrump"]').each(function(){
     .find(".validator")
     .attr("href", `http://www.google.com/search?q=${encodeURI(tweetText)}&ie=utf-8&oe=utf-8`);
 })
+
+
+// TODO: Add better search params.
+
+// https://chrome.google.com/webstore/detail/trump-tweet-investigator/ffhfdefmgojojcligjcomiaebeenmojf
+
+// Decoded
+
+// q: pass date into google search
+// rlz: 1C5CHFA_enUS685US685
+// tbs: cdr:1,cd_min:7/29/2018,cd_max:7/31/2018
+// source: lnms
+// tbm: nws
+// sa: X
+// ved: 0ahUKEwit2qGfutbcAhWIEXwKHehBB0gQ_AUICygC
+// biw: 3008
+// bih: 1573
+
+// Source
+
+// q: pass+date+into+google+search
+// rlz: 1C5CHFA_enUS685US685
+// tbs: cdr:1,cd_min:7/29/2018,cd_max:7/31/2018
+// source: lnms
+// tbm: nws
+// sa: X
+// ved: 0ahUKEwit2qGfutbcAhWIEXwKHehBB0gQ_AUICygC
+// biw: 3008
+// bih: 1573
