@@ -5,8 +5,10 @@
   "main": "content.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/crx pack dist -o trump.crx",
-    "pack": "webpack"
+    "keygen": "crx keygen --force",
+    "build": "webpack && npm run keygen && crx pack dist -o trump.crx -p key.pem && npm run zip",
+    "pack": "webpack",
+    "zip": "jszip dist -o release.zip"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
     "file-loader": "^1.1.11",
+    "jszip-cli": "^1.4.24",
     "prettier": "1.14.0",
     "prettier-eslint": "^8.8.2",
     "webpack": "^4.16.5",
