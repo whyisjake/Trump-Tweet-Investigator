@@ -1,11 +1,12 @@
 {
   "name": "trump-tweet-investigator",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Handy Chrome extension to investigate the claims of Trump's Tweets",
   "main": "content.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/crx pack -o trump.crx"
+    "build": "./node_modules/.bin/crx pack dist -o trump.crx",
+    "pack": "webpack"
   },
   "repository": {
     "type": "git",
