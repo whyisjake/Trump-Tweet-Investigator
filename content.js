@@ -1,5 +1,12 @@
 // Let's make Trump a little more accountable for his Tweets.
 
+function truncate(str, no_words) {
+  return str
+    .split(" ")
+    .splice(0, no_words)
+    .join(" ");
+}
+
 // Append the button to the action bar.
 $('[data-screen-name~="realDonaldTrump"]').find(".ProfileTweet-actionList")
   .append(`
@@ -32,38 +39,25 @@ $('[data-screen-name~="realDonaldTrump"]').each(function() {
     .text()
     .replace(/(\r\n\t|\n|\r\t)/gm, "")
     .trim();
+  const timeStamp = $(this)
+    .find(".tweet-timestamp span")
+    .data("time");
+  const yesterday = moment(timeStamp * 1000)
+    .utc()
+    .subtract(1, "days")
+    .format("L");
+  const tomorrow = moment(timeStamp * 1000)
+    .utc()
+    .add(1, "days")
+    .format("L");
   $(this)
     .find(".validator")
     .attr(
       "href",
-      `http://www.google.com/search?q=${encodeURI(tweetText)}&ie=utf-8&oe=utf-8`
+      `http://www.google.com/search?q=${encodeURI(truncate(tweetText, 32))}
+      &tbs=cdr:1,cd_min:${yesterday},cd_max:${tomorrow}
+      &ie=utf-8
+      &oe=utf-8
+      &tbm=nws`
     );
 });
-
-// TODO: Add better search params.
-
-// https://chrome.google.com/webstore/detail/trump-tweet-investigator/ffhfdefmgojojcligjcomiaebeenmojf
-
-// Decoded
-
-// q: pass date into google search
-// rlz: 1C5CHFA_enUS685US685
-// tbs: cdr:1,cd_min:7/29/2018,cd_max:7/31/2018
-// source: lnms
-// tbm: nws
-// sa: X
-// ved: 0ahUKEwit2qGfutbcAhWIEXwKHehBB0gQ_AUICygC
-// biw: 3008
-// bih: 1573
-
-// Source
-
-// q: pass+date+into+google+search
-// rlz: 1C5CHFA_enUS685US685
-// tbs: cdr:1,cd_min:7/29/2018,cd_max:7/31/2018
-// source: lnms
-// tbm: nws
-// sa: X
-// ved: 0ahUKEwit2qGfutbcAhWIEXwKHehBB0gQ_AUICygC
-// biw: 3008
-// bih: 1573

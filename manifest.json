@@ -9,6 +9,7 @@
     "css": ["styles.css"],
     "js": [
       "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/moment/min/moment.min.js",
       "content.js"
     ],
     "matches": ["https://twitter.com/*"]
