@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Trump Tweet Investigator",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Handy Chrome extension to investigate the claims of Trump's Tweets",
   "content_scripts": [{
     "css": ["styles.css"],

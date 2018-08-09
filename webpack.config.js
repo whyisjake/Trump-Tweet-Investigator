@@ -11,7 +11,13 @@ module.exports = {
       {
         from: "*",
         to: path.resolve(__dirname, "dist"),
-        ignore: ["trump.crx", "key.pem", "npm-debug.log*", "package-*.json"]
+        ignore: [
+          "key.pem",
+          "npm-debug.log*",
+          "package-*.json",
+          "release.zip",
+          "trump.crx"
+        ]
       }
     ])
   ],
